@@ -5,4 +5,6 @@ window.onload = () => {
     navigator.serviceWorker
              .register('./sw.js');
   }
+
+  setTimeout(() => location.href = '/foo', 5000);
 }
